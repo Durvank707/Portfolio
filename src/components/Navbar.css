@@ -1,0 +1,96 @@
+.logo{
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-comp ul{
+    list-style: none;
+}
+
+.nav-comp ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo{
+    margin-left: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between ;
+    top:0;
+    left: 0;
+    background-color: #010203;   
+}
+
+.nav-comp ul{
+    display: flex;
+    width: 100vh;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-top: 25px;
+    font-size: 1.25rem;    
+}
+
+.ham{
+    color: white;
+    display: none;
+}
+
+@media screen  and (max-width:1370px){
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-comp ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        position: fixed;
+        top: 34px;
+        right: -3000px;
+        width: 300px;
+        height: 400px;
+        background-color: #010203;
+        padding: 40px 0 0 10px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-comp.active ul {
+        right: -80px;
+        top: 50px;
+    }
+
+    .nav-comp ul li {
+        margin-bottom: 25px;
+    }
+
+    .ham {
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 25px;
+        margin-right: 50px;
+    }
+
+    .ham i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen  and (max-width:460px){
+    .navbar{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-logo{
+        margin-left: 30px;
+    }
+}

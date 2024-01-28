@@ -1,0 +1,84 @@
+.home {
+    width: 100vw;
+    height: 882px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #010203;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 1.5rem;
+    margin: 200px 0 150px 300px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social a:hover {
+    background: gray;
+}
+
+.info {
+    color: white;
+    max-width: 600px;
+    margin: 150px 0 150px 100px;
+    gap: 100px;
+}
+
+.info h1 {
+    font-size: 4rem;
+}
+
+.info p:nth-child(2) {
+    font-size: 2.5rem;
+}
+
+.info p:nth-child(3) {
+    font-size: 1.25rem;
+}
+
+.hello-btn {
+    font-size: 1.25rem;
+    margin-top: 40px;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid white;
+}
+
+.photo img {
+    width: 400px;
+    height: 400px;
+    margin: 150px 200px 150px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    justify-self: center;
+    animation: profile-animation 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile-animation {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
