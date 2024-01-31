@@ -1,3 +1,7 @@
+.icon{
+    display: none;
+}
+
 .logo{
     letter-spacing: 5px;
     text-decoration: none;
@@ -11,6 +15,7 @@
 .nav-comp ul a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .nav-logo{
@@ -23,6 +28,10 @@
     top:0;
     left: 0;
     background-color: #010203;   
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-comp ul{
@@ -41,27 +50,43 @@
 
 @media screen  and (max-width:1370px){
     
+    .title{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+        font-size: 1.5rem;
+    }
+
     .navbar{
         display: flex;
         justify-content: space-between;
-    }
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    } 
     
     .nav-comp ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column;
         position: fixed;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
         top: 34px;
         right: -3000px;
-        width: 300px;
-        height: 400px;
+        width: 150px;
+        height: 500px;
         background-color: #010203;
-        padding: 40px 0 0 10px;
+        padding: 40px 0 0 30px;
         transition: 0.5s ease-in-out;
+        z-index: 10;
     }
 
     .nav-comp.active ul {
-        right: -80px;
+        right: -100px;
         top: 50px;
     }
 
@@ -84,13 +109,40 @@
 }
 
 @media screen  and (max-width:460px){
+    .title{
+        display: none;
+    }
+    
+    .icon{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .nav-comp ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        position: fixed;
+        top: 34px;
+        right: -3000px;
+        width: 200px;
+        height: 200px;
+        background-color: #010203;
+        padding: 40px 0 0 30px;
+        transition: 0.5s ease-in-out;
+        z-index: 10;
+    }
+
     .navbar{
-        
         display: flex;
         justify-content: space-between;
+        z-index: 1;
     }
     
     .nav-logo{
         margin-left: 30px;
     }
 }
+
+
+

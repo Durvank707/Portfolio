@@ -1,0 +1,159 @@
+.about{
+    background-color: #F3F2ED;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_me h1{
+    font-size: 3rem;
+}
+
+.about_me p{
+    position: relative;
+    bottom: 60px;
+    font-size: 1.25rem;
+}
+
+.about_photo img{
+    width: 350px;
+    height: 350px;
+    border-radius: 40px;
+}
+
+.about_content{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.about_info{
+    width: 600px;
+    padding: 20px 125px 0 200px;
+}
+
+.about_atag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010101;
+    width: 200px;
+    height: 60px;
+    margin-top: 80px;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    
+}
+
+.about_atag a{
+    text-decoration: none;
+    color: white;
+}
+
+.about_atag span{
+    position: relative;
+    top: 3px;
+}
+
+
+@media screen and (max-width:1400px) {
+    
+    .about_photo{
+        margin-left: 50px;
+    }
+
+    .about_photo img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .about_content{
+        width: 1000px;
+    }
+
+    .about_info{
+        width: 400px;
+        padding: 0 60px 0 150px;
+    }
+
+    .about_atag{
+        position: relative;
+        top: -4px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+    }
+
+    .about_photo img{
+        width: 275px;
+        height: 275px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+
+    .about_info{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:810px){
+    .about_info{
+        width: 400px;
+    }
+
+    .about_content{
+        width: 600px;   
+    }
+}
+
+@media screen and (max-width:610px){
+    .about_me h1{
+        font-size: 2rem;
+    }
+
+    .about_me p{
+        font-size: 1rem;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .about_photo img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .about_content{
+        width: 200px;   
+    }
+
+    .about_info{
+        width: 300px;
+        font-size: 0.75rem;
+        padding: 0 0 0 0;
+    }
+
+    .about_atag{
+        position: relative;
+        top: -30px;
+        width: 130px;
+        height: 40px;
+        font-size: 0.75rem;
+        border-radius: 10px;
+    }
+}

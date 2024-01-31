@@ -8,7 +8,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <section>
+        <section className='container'>
             <div className='home'>
                 <div className='social'>
                     <Link to='https://www.instagram.com/7.r_durvank' target='_blank'>
@@ -24,8 +24,8 @@ const Home = () => {
 
                 <div className='info'>
                     <h1>Durvank Jagtap</h1>
-                    <p>Web Developer</p>
-                    <p>I'm a MERN stack developer and I'm very passionate and dedicated to my work</p>
+                    <p className='subTitle'>Web Developer</p>
+                    <p className='description'>I'm a MERN stack developer and I'm very passionate and dedicated to my work</p>
 
                     <button className='hello-btn'>
                         Say Hello <AiOutlineMessage />
