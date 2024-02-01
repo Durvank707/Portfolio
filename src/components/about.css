@@ -37,32 +37,47 @@
 
 .about_info{
     width: 600px;
-    padding: 20px 125px 0 200px;
+    padding: 0 125px 0 200px;
 }
 
-.about_atag{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #010101;
-    width: 200px;
-    height: 60px;
-    margin-top: 80px;
-    font-size: 1.25rem;
+.about_button{
+    margin-bottom: 50px;
+}
+
+.about_btn{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
     border-radius: 20px;
-    
-}
-
-.about_atag a{
-    text-decoration: none;
+    background-color: #010203;
     color: white;
+    border: 1px solid #010203;
+    cursor: pointer;
 }
 
-.about_atag span{
-    position: relative;
-    top: 3px;
+.my_intro{
+   display: block;
+} 
+
+.my_intro_none{
+    display: none;
 }
 
+.my_edu{
+    display: block;
+}
+
+.my_edu_none{
+    display: none;
+}
+
+.about_span{
+    font-size: 1.5rem;
+}
+
+.institute_name{
+    margin-left: 30px;
+}
 
 @media screen and (max-width:1400px) {
     

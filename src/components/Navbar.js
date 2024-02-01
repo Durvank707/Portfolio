@@ -30,26 +30,25 @@ const Navbar = () => {
                     <ul>
 
                         <li>
-                            <Link to="home" smooth={true} offset={-430} duration={700}><span className='icon'><CiHome /></span> <span className='title'> Home</span></Link>
+                            <Link to="home" smooth={true} offset={0} duration={700}><span className='icon'><CiHome /></span> <span className='title'> Home</span></Link>
                         </li>
 
 
                         <li>
-                            <Link to="about" smooth={true} offset={300} duration={700}><span className='icon'><IoPersonCircleSharp /></span><span className='title'> About</span></Link>
+                            <Link to="about" smooth={true} offset={0} duration={700}><span className='icon'><IoPersonCircleSharp /></span><span className='title'> About</span></Link>
                         </li>
 
                         <li>
-                            <Link to="skills" smooth={true} offset={300} duration={700}><span className='icon'><RiFileList3Line /></span> <span className='title'> Skills</span></Link>
+                            <Link to="skills" smooth={true} offset={0} duration={700}><span className='icon'><RiFileList3Line /></span> <span className='title'> Skills</span></Link>
                         </li>
 
                         <li>
-                            <Link to="project" smooth={true} offset={300} duration={700}><span className='icon'><GoProjectSymlink /></span> <span className='title'> Project</span></Link>
+                            <Link to="project" smooth={true} offset={0} duration={700}><span className='icon'><GoProjectSymlink /></span> <span className='title'> Project</span></Link>
                         </li>
 
                         <li>
-                            <Link to="contact" smooth={true} offset={300} duration={700}><span className='icon'><FiSend /></span> <span className='title'> Contact</span></Link>
+                            <Link to="contact" smooth={true} offset={0} duration={700}><span className='icon'><FiSend /></span> <span className='title'> Contact</span></Link>
                         </li>
-
                     </ul>
                 </div>
 

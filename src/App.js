@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
+import Skills from './components/Skills'
 // import { Routes, Route } from "react-router-dom"
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Home/>
       <About/>
+      <Skills/>
       {/* <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />

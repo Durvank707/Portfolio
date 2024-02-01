@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
-import { AiOutlineMessage } from 'react-icons/ai';
 import './Home.css';
+import CV from "../assets/Resume.pdf"
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Home = () => {
     return (
@@ -27,9 +28,9 @@ const Home = () => {
                     <p className='subTitle'>Web Developer</p>
                     <p className='description'>I'm a MERN stack developer and I'm very passionate and dedicated to my work</p>
 
-                    <button className='hello-btn'>
-                        Say Hello <AiOutlineMessage />
-                    </button>
+                    <div className='about_atag'>
+                        <a download="Resume" href={CV}>Download CV <span><MdOutlineFileDownload /></span></a>
+                    </div>
                 </div>
 
                 <div className='photo'>

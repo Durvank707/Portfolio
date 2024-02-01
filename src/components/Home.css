@@ -44,16 +44,28 @@
     font-size: 1.25rem;
 }
 
-.hello-btn {
+.about_atag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    margin-top: 80px;
     font-size: 1.25rem;
-    margin-top: 40px;
-    width: 150px;
-    height: 70px;
     border-radius: 20px;
-    outline: none;
-    border: 2px solid white;
+    
 }
 
+.about_atag a{
+    text-decoration: none;
+    color: black;
+}
+
+.about_atag span{
+    position: relative;
+    top: 3px;
+}
 .photo img {
     width: 400px;
     height: 400px;
