@@ -15,7 +15,7 @@ const Home = () => {
                     <Link to='https://www.instagram.com/7.r_durvank' target='_blank'>
                         <FaInstagram />
                     </Link>
-                    <Link to='https://www.linkedin.com/in/durvank-jagtap-b288b2231' target='_blank'>
+                     <Link to='https://www.linkedin.com/in/durvank-jagtap-b288b2231' target='_blank'>
                         <FaLinkedin />
                     </Link>
                     <Link to='https://github.com/Durvank707' target='_blank'>

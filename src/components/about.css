@@ -1,10 +1,11 @@
 .about{
-    background-color: #F3F2ED;
-    height: 100vh;
+    background-color: #010203;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .about_me{
@@ -49,8 +50,8 @@
     height: 50px;
     margin: 20px;
     border-radius: 20px;
-    background-color: #010203;
-    color: white;
+    background-color: white;
+    color: #010203;
     border: 1px solid #010203;
     cursor: pointer;
 }
@@ -77,6 +78,22 @@
 
 .institute_name{
     margin-left: 30px;
+}
+
+.intro{
+    background-color: white;
+}
+
+.introno{
+    background-color: gray;
+}
+
+.edu{
+    background-color: white;
+}
+
+.eduno{
+    background-color: gray;
 }
 
 @media screen and (max-width:1400px) {
@@ -170,5 +187,10 @@
         height: 40px;
         font-size: 0.75rem;
         border-radius: 10px;
+    }
+
+    .about_button{
+        display: flex;
+        flex-direction: column;
     }
 }

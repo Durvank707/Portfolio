@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
                         <li>
-                            <Link to="about" smooth={true} offset={0} duration={700}><span className='icon'><IoPersonCircleSharp /></span><span className='title'> About</span></Link>
+                            <Link to="about" smooth={true} offset={-150} duration={700}><span className='icon'><IoPersonCircleSharp /></span><span className='title'> About</span></Link>
                         </li>
 
                         <li>
@@ -43,7 +43,7 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <Link to="project" smooth={true} offset={0} duration={700}><span className='icon'><GoProjectSymlink /></span> <span className='title'> Project</span></Link>
+                            <Link to="project" smooth={true} offset={-120} duration={700}><span className='icon'><GoProjectSymlink /></span> <span className='title'> Project</span></Link>
                         </li>
 
                         <li>

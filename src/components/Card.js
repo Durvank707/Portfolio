@@ -13,7 +13,7 @@ const Card = ({ image, title, desc, github }) => {
                     <div className='project_gh_icon'>
                         <FaGithub />
                     </div>
-                </Link>
+                 </Link>
 
             </div>
             <div className='project_info'>

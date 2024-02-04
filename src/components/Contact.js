@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css"
 import { FaLinkedin } from 'react-icons/fa6';
 import { Link } from 'react-router-dom'
 import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
+    
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_hpquz4o', 'template_8d39c9w', form.current, 'QyWpxDZP2SsivAVud')
+      e.target.reset();
+  };
+    
     return (
         <section id='contact' className='contact_section'>
             <div className='contact_container'>
@@ -22,7 +33,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='contact_form'>
-                    <form className='form'>
+                    <form className='form' ref={form} onSubmit={sendEmail}>
                         <div className='contact_label'>
                             <label htmlFor='name' className='label'> Name</label>
                             <input type='text' name='name' id='name' placeholder='Name' required />

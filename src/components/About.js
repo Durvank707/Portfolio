@@ -20,16 +20,16 @@ const About = () => {
                 <div className='about_me'>
                     <h1>About Me</h1>
                     <div className='about_button'>
-                        <button className='about_btn intro' onClick={buttonHandler1}>
+                        <button className={option ? 'about_btn intro' : 'about_btn introno'} onClick={buttonHandler1}>
                             My Introduction
                         </button>
-                        <button className= 'about_btn edu' onClick={buttonHandler2}>
+                        <button className= {option ? 'about_btn edu eduno' : 'about_btn edu'} onClick={buttonHandler2}>
                             Education
                         </button>
                     </div>
                 </div>
                 <div className='about_content'>
-                    <div className='about_photo'>
+                     <div className='about_photo'>
                         <img src='../assets/photo.jpg' alt='myself' />
                     </div>
                     <div className={option ? 'my_itro about_info' : 'my_intro_none'}>

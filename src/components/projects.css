@@ -1,8 +1,11 @@
 .project_container{
+    background-color: #010203;
     display: flex;
+    color: white;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    height: 8   00px;
 }
 
 .project_title{

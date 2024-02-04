@@ -19,7 +19,7 @@ const Skills = () => {
                             <p><FaCheck />Java</p>
                             <p><FaCheck />Python (Basic)</p>
                         </div>
-                    </div>
+                     </div>
                     <div className='frontend content'>
                         <div>
                             <h1>Frontend</h1>

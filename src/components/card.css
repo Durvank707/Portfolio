@@ -1,13 +1,11 @@
 .card {
-    background-color: white;
-    border: 2px solid #F9F6EE;
+    background-color: #010203;
+    /* border: 2px solid #F9F6EE; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 
 .project_gh_icon a{

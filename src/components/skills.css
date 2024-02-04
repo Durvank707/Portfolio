@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 1000px;
     color: white;
     background-color: #010203;
     gap: 100px;
@@ -61,7 +61,7 @@
 
     .skills{
         gap: 0px;
-        height: 1080px;
+        height: 900px;
     }
 
     .skills_title{
